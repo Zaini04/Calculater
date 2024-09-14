@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Calculater{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:90%;
+    width: 30%;
+    /* background-color: burlywood; */
+    border-radius: 8%;
+    background-color: gray;
+
+}
+.calculator-screen{
+    width: auto;
+    height: 15%;
+    /* padding: 45px; */
+    padding: 0;
+    margin-bottom: 10%;
+    margin-top: -10%;
+    padding: 30px 2px 0px 0px;
+    text-align: right;
+    border: none;
+    background-color: rgb(80 96 85);
+    color: white;
+    outline: none;
+    /* border-bottom: 0,5px solid black; */
+    border-radius: 20px;
+    font-size: 45px;
+}
+.calculater-keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:center ;
+    align-items: center;
+    margin-left: 10px;
+    text-align: center;
+    gap: 3%;
+    margin-top: -5px;
+
+
+
+
+}
+.calculater-keys button{
+    font-size: 30px;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 10px;
+    /* border: 1px solid rgb(58, 56, 56); */
+
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 20%;
+    height: 95%;
+    background-color: rgb(150 150 150);
+    color: white;
+    /* border: 0.5px solid rgb(255, 255, 255); */
+
+}
+.calculater-keys button:hover{
+    opacity: 0.5;
+}
+.Calculater button.operator{
+    background-color: rgb(46 96 89);
+
+
+}
+button.equal-sign{
+    background-color: rgb(16 83 1);
+}
+button.all-clear{
+    background-color: brown;
+}
+
+@media(max-width: 480px){
+    .Calculater{
+        width: 95%;
+        height: 65%;
+        border: 2px solid grey;
+    }
+    .calculator-screen{
+        height: 20%;
+    }
+    .calculater-keys{
+        margin-top: -25px;
+        gap: 7px;
+        /* background-color: aliceblue; */
+        height: 75%;
+       
+
+    }
+    .calculater-keys button{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    height: 100%;
+    border: 1px solid rgb(58, 56, 56);
+    width: 90%;
+    
+    }
+}
